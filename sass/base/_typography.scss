@@ -62,10 +62,12 @@ body {
     
     @include respond(tab-port){
         font-size: 3rem;
+        padding-top: 10rem;
     }
 
     @include respond(phone){
         font-size: 2.5rem;
+        padding-top: 10rem;
     }
     
     &:hover{
