@@ -1,4 +1,5 @@
 # tours-website-template
+![screencapture](https://user-images.githubusercontent.com/38250310/62283510-e952b700-b47b-11e9-92bd-664197d9ddd7.png)
 
 This template is created using pure HTML and CSS (don't forget the [SASS](https://sass-lang.com/documentation)). Cool up to date design and animation template are also made using [SASS](https://sass-lang.com/documentation).
 
