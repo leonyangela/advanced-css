@@ -6,16 +6,14 @@
     @include respond(tab-port){
         padding: 20rem 0;
     }
-
-
 }
 
 .section-features{
     padding: 20rem 0;
     background-image: linear-gradient(
         to right bottom, 
-        rgba($color-primary, 0.8), 
-        rgba($color-primary-light, 0.8)
+        rgba($color-primary-light, 0.8), 
+        rgba($color-primary-dark, 0.8)
         ), url(../img/nat-4.jpg);
     background-size: cover;
     transform: skewY(-7deg);
@@ -70,7 +68,7 @@
     // similiar w/ bg-cover
     background-size: 100%;
     border-radius: 3px;
-    box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
+    box-shadow: 0 1.5rem 4rem rgba($color-black, .2);
 
     // height: 50rem;
 
@@ -90,14 +88,12 @@
         url(../img/nat-10.jpg);
     }
 
-    
-
     &__form{
         width: 50%;
         padding: 6rem;
 
         @include respond (tab-land){
-            width: 70%;
+            width: 65%;
         }
 
         @include respond (tab-port){

@@ -14,7 +14,6 @@
 		z-index: 2000;
 		box-shadow: 0 1rem 3rem rgba($color-black, .1);
 		text-align: center;
-
 		cursor: pointer;
 
 		@include respond(tab-port) {
@@ -51,12 +50,10 @@
 		}
 
 		/*transform: scale(80);*/
-
 	}
 
 	&__nav{
 		height: 100vh;
-		/*width: 100%;*/
 		position: fixed;
 		top: 0;
 		left: 0;
@@ -64,7 +61,7 @@
 
 		opacity: 0;
 		width: 0;
-		transition: all .8s cubic-bezier(0.68, -0.55, 0.265, 1.55);;
+		transition: all .8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 	}
 
 	&__list{

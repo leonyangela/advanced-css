@@ -13,6 +13,7 @@
         top: 0;
         left: 0;
         width: 100%;
+        -webkit-backface-visibility: hidden;
         backface-visibility: hidden;
         border-radius: 3px;
         overflow: hidden;
@@ -60,7 +61,7 @@
         // make it works on every browser chrome and safari, prefix implemented by different browser
         -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
         // not works on IE & microsoft edge
-        clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
         border-top-left-radius: .3rem;
         border-top-right-radius: .3rem;
 
@@ -85,7 +86,7 @@
         color: $color-white;
         position: absolute;
         top: 12rem;
-        right: .2rem;
+        right: 2rem;
         width: 75%;
     }
 
@@ -180,7 +181,7 @@
             
             &--back{
                 transform: rotateY(0);
-                clip-path: polygon(0% 15%, 100% 0%, 100% 100%, 0% 100%);
+                clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
             }
 
         }
@@ -196,7 +197,7 @@
         //back side
         &__cta{
             position: relative;
-            top: 0;
+            top: 0%;
             left: 0;
             transform: translate(0);
             width: 100%;
@@ -211,6 +212,4 @@
             font-size: 4rem;
         }
     }
-
-
 }

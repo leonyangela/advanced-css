@@ -19,12 +19,10 @@
         transform: skewX(0);
     }
 
-
-
     // select shape & text
-    & > * {
-        transform: skewX(12deg);
-    }
+    // & > * {
+    //     transform: skewX(12deg);
+    // }
 
     &__shape{
         // this thing will worked only if it's floated and has width & height.
@@ -33,6 +31,11 @@
         // background-color: orangered;
         float: left;
 
+        transform: translateX(-3rem) skewX(12deg);
+        position: relative;
+        overflow: hidden;
+        border-radius: 50%;
+
         // 50% = radius half the height and the width of the element = 7.5rem, diameternya will be 15 at 50% vertically and 50% horizontally
         -webkit-shape-outside: circle(50% at 50% 50%);
         shape-outside: circle(50% at 50% 50%);
@@ -40,9 +43,6 @@
         // clip path to make the element become circle.
         -webkit-clip-path: circle(50% at 50% 50%);
         clip-path: circle(50% at 50% 50%);
-
-        transform: translateX(-3rem) skewX(12deg);
-        position: relative;
 
         @include respond(phone) {
             transform: translateX(-3rem) skewX(0);

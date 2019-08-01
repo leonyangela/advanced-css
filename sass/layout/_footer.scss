@@ -8,16 +8,12 @@
 		padding: 8rem 0;
 	}
 
-	@include respond(phone){
-	
-	}
-
 	&__logo-box{
 		text-align: center;
 		margin-bottom: 8rem;
 
 		@include respond(tab-port){
-			margin-bottom: 4rem;
+			margin-bottom: 6rem;
 		}
 	}
 
@@ -33,7 +29,7 @@
 
 		@include respond(tab-port){
 			width: 100%;
-			float: none;
+			text-align: center;
 		}
 	}
 
@@ -55,7 +51,7 @@
             color: $color-grey-light-1;
             background-color: $color-grey-dark-3;
             text-decoration: none;
-            text-transform: uppercase;
+            // text-transform: uppercase;
             display: inline-block;
             transition: all .2s;
             padding-right: 1.5rem;
@@ -74,5 +70,10 @@
 		padding-top: 2rem;
 		width: 80%;
 		float: right;
+
+		@include respond(tab-port) {
+			width: 100%;
+			float: none;
+		}
 	}
 }
