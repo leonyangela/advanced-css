@@ -35,4 +35,4 @@ cd advanced-css
 ## Built With
 * Pure HTML, CSS, and [SASS](https://sass-lang.com/documentation)
 
-If you have any suggestions or found some debug, feel free to contact me.
+If you have any suggestions or found some error, feel free to contact me.
