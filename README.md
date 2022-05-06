@@ -10,6 +10,7 @@ These instructions will get you a copy of the project up and running on your loc
 What things you need to install the software and how to install them:
 ```
 Up to date Browser(Chrome and Safari are recommended).
+install global **sass** and **live-server**
 ```
 
 ## Installation
@@ -21,15 +22,27 @@ Switch to the repo folder
 ```
 cd advanced-css
 ```
-Open 
+Make sure you have **sass** and **live-server** installed **globally**, if not use:
 ```
-natours-project.html 
+npm i -g live-server sass
+```
+Open: `natours-project.html `
+
+If the CSS is not applied, run:
+```
+npm compile:sass
+```
+Start the app
+```
+npm start
 ```
 
 ## TL;DR command list
 ```
 git clone https://github.com/leonyangela/advanced-css.git
 cd advanced-css
+npm compile:sass
+npm start
 ```
 
 ## Built With
